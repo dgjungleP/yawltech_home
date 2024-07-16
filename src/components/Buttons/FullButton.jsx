@@ -6,7 +6,7 @@ export default function FullButton({ title, action, border }) {
     <Wrapper
       className="animate pointer radius8"
       onClick={action ? () => action() : null}
-      border={border}
+      border={border }
     >
       {title}
     </Wrapper>

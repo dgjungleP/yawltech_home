@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 // Assets
 import LogoImg from "../../assets/svg/Logo";
-
+import { companyEnName } from "../../commoms";
 export default function Contact() {
 
   const getCurrentYear = () => {
@@ -18,7 +18,7 @@ export default function Contact() {
             <Link className="flexCenter animate pointer" to="home" smooth={true} offset={-80}>
               <LogoImg />
               <h1 className="font15 extraBold whiteColor" style={{ marginLeft: "15px" }}>
-                Fanatic
+                {companyEnName}
               </h1>
             </Link>
             <StyleP className="whiteColor font13">
@@ -26,7 +26,7 @@ export default function Contact() {
             </StyleP>
 
             <Link className="whiteColor animate pointer font13" to="home" smooth={true} offset={-80}>
-              Back to top
+              回到顶部
             </Link>
           </InnerWrapper>
         </div>

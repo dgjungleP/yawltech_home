@@ -5,9 +5,9 @@ import { Link } from "react-scroll";
 import CloseIcon from "../../assets/svg/CloseIcon";
 import LogoIcon from "../../assets/svg/Logo";
 
-export default function Sidebar({ sidebarOpen, toggleSidebar }) {
+export default function Sidebar({ sidebaropen, toggleSidebar }) {
   return (
-    <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
+    <Wrapper className="animate darkBg" sidebaropen={sidebaropen }>
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
           <LogoIcon />
@@ -15,7 +15,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             fanatic
           </h1>
         </div>
-        <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
+        <CloseBtn onClick={() => toggleSidebar(!sidebaropen)} className="animate pointer">
           <CloseIcon />
         </CloseBtn>
       </SidebarHeader>
@@ -23,7 +23,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
       <UlStyle className="flexNullCenter flexColumn">
         <li className="semiBold font15 pointer">
           <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
+            onClick={() => toggleSidebar(!sidebaropen)}
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
@@ -37,7 +37,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
         </li>
         <li className="semiBold font15 pointer">
           <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
+            onClick={() => toggleSidebar(!sidebaropen)}
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
@@ -51,7 +51,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
         </li>
         <li className="semiBold font15 pointer">
           <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
+            onClick={() => toggleSidebar(!sidebaropen)}
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
@@ -65,7 +65,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
         </li>
         <li className="semiBold font15 pointer">
           <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
+            onClick={() => toggleSidebar(!sidebaropen)}
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
@@ -79,7 +79,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
         </li>
         <li className="semiBold font15 pointer">
           <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
+            onClick={() => toggleSidebar(!sidebaropen)}
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
@@ -93,7 +93,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
         </li>
         <li className="semiBold font15 pointer">
           <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
+            onClick={() => toggleSidebar(!sidebaropen)}
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
@@ -128,7 +128,7 @@ const Wrapper = styled.nav`
   position: fixed;
   top: 0;
   padding: 0 30px;
-  right: ${(props) => (props.sidebarOpen ? "0px" : "-400px")};
+  right: ${(props) => (props.sidebaropen ? "0px" : "-400px")};
   z-index: 9999;
   @media (max-width: 400px) {
     width: 100%;
